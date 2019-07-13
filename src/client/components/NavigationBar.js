@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../../static/css/styles.css";
+import styles from "../../../static/css/styles.module.css";
 
 const navItems = [
   {
@@ -21,16 +21,12 @@ const renderNavItem = active => {
     </li>
   ));
 
-  return (
-    <ul className="navbar-nav ml-auto d-none d-lg-flex d-xl-flex">{items}</ul>
-  );
+  return <ul>{items}</ul>;
 };
 
 const NavigationBar = ({ active }) => (
-  <nav id="navbar" className="d-xs-none d-sm-none d-md-none d-lg-block">
-    <div className="collapse navbar-collapse" id="top-nav">
-      {renderNavItem(active)}
-    </div>
+  <nav className={`${styles.navbar} d-xs-none d-sm-none d-md-none d-lg-block`}>
+    {renderNavItem(active)}
   </nav>
 );
 
