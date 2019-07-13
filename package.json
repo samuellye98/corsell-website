@@ -1,16 +1,18 @@
 {
-  "name": "my-app",
+  "name": "corsell-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "next": "^9.0.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "dev": "node src/server/index.js",
+    "dev": "next build && node src/server/index.js",
     "build": "next build",
     "start": "next start",
     "export": "next export"

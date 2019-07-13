@@ -1,6 +1,6 @@
-const Index = () => (
-  <div>
-    <p>Hello Next.js, this is your friend Brian from logrocket</p>
-  </div>
-);
+import "../static/css/styles.css";
+import NavigationBar from "../src/client/components/NavigationBar";
+
+const Index = () => <NavigationBar />;
+
 export default Index;
